@@ -24,10 +24,10 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useUnifiedTopology", true);
 
 mongoose
-  .connect(process.env.MONGODB_URI || "mongodb://localhost/root-directory", { useNewUrlParser: true })
+  .connect(process.env.DB_URI, { useNewUrlParser: true })
   .then((x) => {
     console.log(
-      `Connected to Mongo! Database name: '${x.connections[0].name}'`
+      `Connected to Mongo [Atlas]! Database name: '${x.connections[0].name}'`
     );
   })
   .catch((err) => {
