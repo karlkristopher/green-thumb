@@ -39,12 +39,11 @@ Second, install the dependencies.
 npm install
 ```
 
-### Running BCB
+### Running Root Directory
 
 #### Run the following commands from the root folder.
 
 ```console
-sudo service mongodb start
 npm start
 ```
 
